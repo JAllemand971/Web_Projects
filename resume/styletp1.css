@@ -1,0 +1,181 @@
+/* Jeremy Allemand, matricule: 20312390, IFT-1144-A-A24, TP1 */
+
+/* Header Block */
+.header {
+    height: 450px;
+    padding: 50px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    line-height: 0.5;
+}
+
+.header h1 {
+    font-size: 40px;
+    padding-bottom: 5px;
+    padding-top: 5px;  
+}
+.header h3, .header p {
+	font-size: 20px;
+	padding-bottom: 5px;
+    padding-top: 5px;
+   }
+   
+.header hr {
+    width: 75%;
+}	
+	
+
+/* Column container */
+.container {  
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-grow:1;
+}
+ 
+/* Left column */
+.left {
+    flex: 30%;
+    background-color: #8c8787;
+    padding: 20px;  
+    font-size: 20px;
+}
+
+.left h2, .left h3, .left p {
+	color: white;
+	margin: 5px;
+}
+
+.left p {
+	color: white;
+	margin-bottom: 10px;
+}
+
+.lefttitle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.lefttitle p {
+    line-height: 45px;
+}
+
+.leftfont {
+    font-size: 18px;
+    font-family: Arial;
+    color: white;
+}
+
+.separator {
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+}	
+
+/* Right column */
+.right {   
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.right h2 {
+	color: white;
+	background-color: #54AFE4;
+	font-weight: bold;
+	text-transform: uppercase;
+    padding: 10px;
+    border-radius: 15px;
+	margin-bottom: 2px;
+	inline-size: min-content;
+}
+
+ol.a {
+    list-style-type: upper-roman;
+    color: #54AFE4;
+    font-weight: normal;
+}
+
+ul.b {
+    list-style-type: circle;
+    color: black;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+ul.c {
+    list-style-type: square;
+    color: black;
+    font-weight: normal;
+    padding-left: 80px;
+    margin-bottom: 20px;
+}
+
+.name, .location {
+    vertical-align: top;
+    display: inline-block;
+  }
+  
+.name {
+    width: 49%;    
+  }
+  
+.location {
+    width: 50%;
+    text-align: right;    
+  }
+  
+.autre, .image {
+    vertical-align: top;
+    display: inline-block;
+  }
+
+.image {
+	width: 18%;
+    text-align: center;  
+    border: 2px solid #54AFE4;
+    border-radius: 10px;
+    padding: 0px;
+    }
+ 
+.image p {
+    font-size: 15px;
+  }  
+ 
+.autre {
+    width: 75%;    
+  }
+  
+.signature {
+    padding-left: 60px; 
+	font-size: 20px;
+	margin-top: 110px;
+	margin-bottom: 0px;
+    text-indent: 50px;
+	width: 78%; 
+	
+}	
+
+/* Images */
+				
+.image1 {
+    width: 250px;
+	height: 250px;
+    margin-bottom: 10px;
+	border: 5px solid white;
+    border-radius: 10px;	
+	object-fit:cover;
+    padding: 5px;
+  } 
+  
+.image2 {
+    width: 50px;
+  } 
+
+.image3 {
+	width: 185px;
+	height: 185px;
+  }
+
