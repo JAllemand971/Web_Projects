@@ -10,8 +10,8 @@ Repo to show my projects made in HTML5 et CSS3
     <th>Lien</th>
   </tr>
   <tr>
-    <td>Resume Jeremy Allemand</td>
-    <td>URL...</td>
+    <td>Resume of Jeremy Allemand</td>
+    <td><a href="https://jallemand971.github.io/Projects_in_HTML-CSS/resume/resume.html">https://jallemand971.github.io/Projects_in_HTML-CSS/resume/resume.html</a></td>
   </tr>
   <tr>
     <td>Meteo web site</td>
