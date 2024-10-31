@@ -1,84 +1,85 @@
 /* Jeremy Allemand, matricule: 20312390, IFT-1144-A-A24, TP1 */
 
-/* Header Block */
-.header {
-    height: 450px;
-    padding: 50px;
+body { 
+	font-family: Arial, Helvitica, sans-serif;
+	font-size: 1.15em;
+    }                 
+
+/* HEADER */
+header {
+	width: 100%;
+    height: auto;
     text-align: center;
-    background: #1abc9c;
+    background-color: #1abc9c;
     color: white;
-    line-height: 0.5;
+    padding: 2em;
+    margin: 0 auto; 
 }
 
-.header h1 {
-    font-size: 40px;
-    padding-bottom: 5px;
-    padding-top: 5px;  
+header h1 {
+    font-size: 2.5em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;  
 }
-.header h3, .header p {
-	font-size: 20px;
-	padding-bottom: 5px;
-    padding-top: 5px;
+header h3, p {
+	font-size: 2em;
+	padding-bottom: 0.5em;
+    padding-top: 0.5em;
    }
    
-.header hr {
+header hr {
     width: 75%;
 }	
-	
 
-/* Column container */
+/* CONTAINER FOR COLUMN LEFT AND RIGHT */
 .container {  
     display: flex;
     flex-direction: row;
     width: 100%;
-    flex-grow:1;
+	height:auto;
 }
- 
-/* Left column */
+
+
+/* COLUMN LEFT */
 .left {
-    flex: 30%;
+    width: 25%;
     background-color: #8c8787;
-    padding: 20px;  
-    font-size: 20px;
-}
-
-.left h2, .left h3, .left p {
+    padding: 1em;  
 	color: white;
-	margin: 5px;
 }
 
-.left p {
-	color: white;
-	margin-bottom: 10px;
+.title {  
+    display: inline;
+	align-items: left;
 }
 
-.lefttitle {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+.lefttitle h2 {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	padding: 0;
 }
 
-.lefttitle p {
-    line-height: 45px;
+.lefttitle h3 {
+	margin: 0 0.5em 0 0;
+	padding: 0;
 }
 
-.leftfont {
-    font-size: 18px;
-    font-family: Arial;
-    color: white;
+.leftfont{
+    font-size: 1em;
+	font-weight: normal;
+	text-align: right;
 }
 
-.separator {
-    border-bottom: 1px solid white;
-    margin-bottom: 10px;
-}	
+.separator{
+	border-bottom: 0.15em solid white;
+}
 
-/* Right column */
+
+/* RIGHT */
 .right {   
-    flex: 70%;
+    width: 75%;
     background-color: white;
-    padding: 20px;
-    font-size: 25px;
+    padding-left: 1em;
 }
 
 .right h2 {
@@ -86,9 +87,9 @@
 	background-color: #54AFE4;
 	font-weight: bold;
 	text-transform: uppercase;
-    padding: 10px;
-    border-radius: 15px;
-	margin-bottom: 2px;
+    padding: 0.5em;
+    border-radius: 0.5em;
+	margin-bottom: 0.5em;
 	inline-size: min-content;
 }
 
@@ -102,15 +103,15 @@ ul.b {
     list-style-type: circle;
     color: black;
     font-weight: normal;
-    margin-bottom: 20px;
+    margin-bottom: 1em;
 }
 
 ul.c {
     list-style-type: square;
     color: black;
     font-weight: normal;
-    padding-left: 80px;
-    margin-bottom: 20px;
+    padding-left: 4em;
+    margin-bottom: 1em;
 }
 
 .name, .location {
@@ -132,50 +133,138 @@ ul.c {
     display: inline-block;
   }
 
-.image {
-	width: 18%;
-    text-align: center;  
-    border: 2px solid #54AFE4;
-    border-radius: 10px;
-    padding: 0px;
-    }
- 
-.image p {
-    font-size: 15px;
-  }  
- 
 .autre {
     width: 75%;    
   }
-  
+ 
+.image {
+	width: 20%;
+    padding: 0;
+	margin-bottom: 2em;
+text-align: right;      	
+  } 
+
+.image figure {
+    text-align: right;
+    display: inline-block;
+}
+
+.image figcaption {
+    margin-top: 0.5em;
+    text-align: center;
+}
+ 
+ 
 .signature {
-    padding-left: 60px; 
-	font-size: 20px;
-	margin-top: 110px;
-	margin-bottom: 0px;
-    text-indent: 50px;
-	width: 78%; 
-	
+    padding-left: 3em; 
+    text-indent: 2em;	
 }	
+
+
+/* FOOTER */
+footer {
+	width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #1abc9c;
+    color: white;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.validation li {
+display: inline-block;
+font-size: 1.25em;
+padding: 1.25em;
+text-transform: uppercase;
+}
 
 /* Images */
 				
 .image1 {
-    width: 250px;
-	height: 250px;
-    margin-bottom: 10px;
-	border: 5px solid white;
-    border-radius: 10px;	
+    width: 16em;
+	height: 16em;
+    margin-bottom: 1em;
+	border: 0.35em solid white;
+    border-radius: 0.5em;	
 	object-fit:cover;
-    padding: 5px;
+    padding: 0.35em;
   } 
   
 .image2 {
-    width: 50px;
-  } 
-
-.image3 {
-	width: 185px;
-	height: 185px;
+    width: 3.5em;
+	margin-top: 0.25em;
+	margin-bottom: 0.5em;
+	padding: 0;
   }
 
+.image3 {
+	width: 12em;
+	height: 12em;
+	object-fit:cover;
+    padding: 0.35em;
+	border: 0.15em solid #54AFE4;
+    border-radius: 0.5em;
+  }
+
+/* Optimisation pour les smartphones et tablettes */
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2em; /* Réduction de la taille des titres */
+    }
+    
+    header h3, p {
+        font-size: 1.5em; /* Réduction de la taille des sous-titres */
+    }
+
+    .container {
+        flex-direction: column; /* Passe en disposition verticale pour les petits écrans */
+    }
+
+    .left, .right {
+        width: 100%; /* Les colonnes occupent toute la largeur */
+        padding: 1em;
+    }
+
+    .right h2 {
+        font-size: 1.5em; /* Taille des titres ajustée */
+    }
+
+    .image {
+        width: 100%; /* Les images prennent toute la largeur disponible */
+    }
+
+    .image img {
+        width: 100%; /* Ajuste les images pour ne pas déborder */
+    }
+
+    .name, .location {
+        display: block; /* Les éléments de texte passent sur deux lignes */
+        width: 100%;
+        text-align: left;
+    }
+
+    .autre, .image {
+        width: 100%; /* Les images prennent toute la largeur */
+    }
+
+    footer {
+        font-size: 1em; /* Réduction de la taille de la police dans le pied de page */
+    }
+}
+
+/* Optimisation pour les très petits écrans (smartphones) */
+@media only screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; /* Réduction supplémentaire pour les très petits écrans */
+    }
+
+    .image1, .image3 {
+        width: 100%; /* Les images prennent toute la largeur sur de très petits écrans */
+        height: auto; /* Ajuste la hauteur automatiquement */
+    }
+
+    .right {
+        padding-left: 0.5em; /* Réduit le padding pour mieux utiliser l'espace */
+    }
+}
