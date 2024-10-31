@@ -207,3 +207,64 @@ text-transform: uppercase;
     border-radius: 0.5em;
   }
 
+/* Optimisation pour les smartphones et tablettes */
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2em; /* Réduction de la taille des titres */
+    }
+    
+    header h3, p {
+        font-size: 1.5em; /* Réduction de la taille des sous-titres */
+    }
+
+    .container {
+        flex-direction: column; /* Passe en disposition verticale pour les petits écrans */
+    }
+
+    .left, .right {
+        width: 100%; /* Les colonnes occupent toute la largeur */
+        padding: 1em;
+    }
+
+    .right h2 {
+        font-size: 1.5em; /* Taille des titres ajustée */
+    }
+
+    .image {
+        width: 100%; /* Les images prennent toute la largeur disponible */
+    }
+
+    .image img {
+        width: 100%; /* Ajuste les images pour ne pas déborder */
+    }
+
+    .name, .location {
+        display: block; /* Les éléments de texte passent sur deux lignes */
+        width: 100%;
+        text-align: left;
+    }
+
+    .autre, .image {
+        width: 100%; /* Les images prennent toute la largeur */
+    }
+
+    footer {
+        font-size: 1em; /* Réduction de la taille de la police dans le pied de page */
+    }
+}
+
+/* Optimisation pour les très petits écrans (smartphones) */
+@media only screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; /* Réduction supplémentaire pour les très petits écrans */
+    }
+
+    .image1, .image3 {
+        width: 100%; /* Les images prennent toute la largeur sur de très petits écrans */
+        height: auto; /* Ajuste la hauteur automatiquement */
+    }
+
+    .right {
+        padding-left: 0.5em; /* Réduit le padding pour mieux utiliser l'espace */
+    }
+}
