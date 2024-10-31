@@ -221,7 +221,7 @@ text-transform: uppercase;
         flex-direction: column; /* Passe en disposition verticale pour les petits écrans */
     }
 
-    .left, .right {
+    header, footer, .left, .right {
         width: 100%; /* Les colonnes occupent toute la largeur */
         padding: 1em;
     }
@@ -247,10 +247,6 @@ text-transform: uppercase;
     .autre, .image {
         width: 100%; /* Les images prennent toute la largeur */
     }
-
-    footer {
-        font-size: 1em; /* Réduction de la taille de la police dans le pied de page */
-    }
 }
 
 /* Optimisation pour les très petits écrans (smartphones) */
@@ -266,5 +262,9 @@ text-transform: uppercase;
 
     .right {
         padding-left: 0.5em; /* Réduit le padding pour mieux utiliser l'espace */
+    }
+	
+	    header, footer, .left, .right {
+        width: 100%; /* Les colonnes occupent toute la largeur */
     }
 }
