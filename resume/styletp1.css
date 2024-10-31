@@ -279,9 +279,4 @@ text-transform: uppercase;
         width: 100%; /* Les colonnes occupent toute la largeur */
     }
 
-    /* Nouveauté : Casser les mots longs comme des URLs dans le header */
-    header p {
-        word-wrap: break-word; /* Casse les lignes longues, comme les URLs */
-        overflow-wrap: break-word;
-    }
 }
