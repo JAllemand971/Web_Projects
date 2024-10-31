@@ -21,11 +21,19 @@ header h1 {
     padding-bottom: 0.5em;
     padding-top: 0.5em;  
 }
-header h3, p {
+header h3 {
 	font-size: 2em;
 	padding-bottom: 0.5em;
     padding-top: 0.5em;
    }
+   
+header p {
+	font-size: 2em;
+	padding-bottom: 0.5em;
+    padding-top: 0.5em;
+	word-wrap: break-word;
+    overflow-wrap: break-word;
+   }   
    
 header hr {
     width: 75%;
@@ -141,7 +149,7 @@ ul.c {
 	width: 20%;
     padding: 0;
 	margin-bottom: 2em;
-text-align: right;      	
+    text-align: right;      	
   } 
 
 .image figure {
@@ -232,10 +240,12 @@ text-transform: uppercase;
 
     .image {
         width: 100%; /* Les images prennent toute la largeur disponible */
+		text-align: center;
     }
 
     .image img {
         width: 100%; /* Ajuste les images pour ne pas déborder */
+		text-align: center;
     }
 
     .name, .location {
@@ -258,13 +268,20 @@ text-transform: uppercase;
     .image1, .image3 {
         width: 100%; /* Les images prennent toute la largeur sur de très petits écrans */
         height: auto; /* Ajuste la hauteur automatiquement */
+		text-align: center;
     }
 
     .right {
         padding-left: 0.5em; /* Réduit le padding pour mieux utiliser l'espace */
     }
 	
-	    header, footer, .left, .right {
+    header, footer, .left, .right {
         width: 100%; /* Les colonnes occupent toute la largeur */
+    }
+
+    /* Nouveauté : Casser les mots longs comme des URLs dans le header */
+    header p {
+        word-wrap: break-word; /* Casse les lignes longues, comme les URLs */
+        overflow-wrap: break-word;
     }
 }
