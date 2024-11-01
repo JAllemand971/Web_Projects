@@ -15,7 +15,7 @@ Repo to show my projects made in HTML5 et CSS3
   </tr>
   <tr>
     <td>Meteo web site</td>
-    <td>URL...</td>
+    <td><a href="https://jallemand971.github.io/Projects_in_HTML-CSS/meteo/meteo.html">https://jallemand971.github.io/Projects_in_HTML-CSS/meteo/meteo.html</a></td>    
   </tr>
 
 
