@@ -24,9 +24,6 @@ header {
 
 header h1 {
     width: 100%;
-    position: relative; /* Positions the title at the top with 10px left padding */
-    left: 10px;
-    bottom: 25px;
     color: yellow;
     font-size: 60px;
 }
