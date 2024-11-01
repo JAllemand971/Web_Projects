@@ -26,7 +26,6 @@ header h1 {
     width: 100%;
     position: relative; /* Positions the title at the top with 10px left padding */
     left: 0.625em; /* 10px = 0.625em */
-    bottom: 1.5625em; /* 25px = 1.5625em */
     color: yellow;
     font-size: 3.75em; /* 60px = 3.75em */
 }
@@ -296,6 +295,7 @@ footer a:active {
     /* Form fields */
     #name, #address, #comment {
         width: 100%; /* Form fields take full width */
+        margin: 0 auto;
     }
 
     .row {
@@ -347,6 +347,7 @@ footer a:active {
     /* Form fields */
     #name, #address, #comment {
         width: 100%; /* Full-width form fields */
+        margin: 0 auto;
     }
 
     .row {
