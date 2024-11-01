@@ -231,131 +231,129 @@ footer a:active {
 } /* Link styles */
 
 /* RESPONSIVE DESIGN FOR TABLETS AND SMARTPHONES */
-@media (max-width: 57.5em) { /* 920px = 57.5em */
+@media (max-width: 57.5em) { /* 920px */
+    /* Container adjustments */
     #container {
-        width: 100%; /* Adjust width to fit smaller screens */
-        padding: 0.625em; /* 10px = 0.625em */
+        width: 100%; /* Adjusts container to 100% for smaller screens */
+        padding: 1em; /* Adds padding for better spacing */
     }
 
+    /* Header title adjustment */
     header h1 {
-        font-size: 2.5em; /* 40px = 2.5em */
+        font-size: 2.5em; /* Reduces font size for the weather title */
+        bottom: 1em; /* Moves title slightly up for better alignment */
     }
 
+    /* Navigation adjustments */
     nav table th {
-        padding: 0.3125em; /* 5px = 0.3125em */
+        padding: 0.625em; /* Reduces padding in navigation */
     }
 
-    #meteo ul, #forecast table {
-        width: 100%; /* Make the lists and tables responsive */
+    /* Weather list adjustments */
+    #meteo ul {
+        width: 100%; /* Makes list width responsive */
+        padding-left: 0; /* Removes padding for proper alignment */
     }
 
+    /* Weather image adjustments */
     #forecast img {
-        width: 4.5em; /* 72px = 4.5em */
+        width: 4.5em; /* Smaller image size for tablets */
         height: 4.5em;
     }
 
+    /* Forecast table adjustments */
     #forecast th, #forecast td {
-        font-size: 0.875em; /* 14px = 0.875em */
+        font-size: 0.875em; /* Reduces font size in the table */
     }
 
-    #name, #address, #comment {
-        width: 100%; /* Make input fields take full width */
-    }
-
+    /* Form fields adjustments */
     #comments form {
-        padding-left: 0; /* Remove extra padding for smaller screens */
+        padding-left: 0; /* Removes extra padding for form on smaller screens */
     }
 
-    .row {
-        flex-direction: column; /* Stack form elements vertically on smaller screens */
-        align-items: flex-start; /* Align form labels and fields */
+    /* Form input fields */
+    #name, #address, #comment {
+        width: 100%; /* Full-width input fields for better spacing */
+        margin-bottom: 1em; /* Adds space between form fields */
     }
 
+    /* Form buttons */
     input[type=submit], input[type=reset] {
         width: 100%; /* Full-width buttons for better touch interaction */
-        margin-right: 0; /* Remove margin */
+        margin-right: 0; /* Removes margin for proper alignment */
+        margin-top: 0.625em; /* Adds margin to separate the buttons from form fields */
     }
 
+    /* Footer adjustments */
     footer table, footer td {
-        font-size: 0.75em; /* 12px = 0.75em */
+        font-size: 0.75em; /* Smaller font size for footer */
         text-align: center;
     }
 
     #column1, #column3 {
-        width: 100%; /* Full width columns in footer */
-        text-align: center;
-        padding: 0.625em 0; /* 10px = 0.625em */
+        width: 100%; /* Full-width columns in footer */
+        text-align: center; /* Centers text for better alignment */
+        padding: 0.625em 0; /* Adds padding for better spacing */
     }
-#meteo ul {
-        width: 100%; /* Adjusts to screen width */
-        padding-left: 0; /* Removes padding for better alignment */
-    }
-
-    /* Form fields */
-    #name, #address, #comment {
-        width: 100%; /* Form fields take full width */
-        margin: 0 auto;
-    }
-
-    .row {
-        flex-direction: column; /* Form fields stack vertically */
-        align-items: flex-start; /* Align left for better readability */
-    }
-
-    input[type=submit], input[type=reset] {
-        width: 100%; /* Buttons take full width */
-        margin-right: 0; /* Removes margin */
-    }    
 }
 
-/* Smartphones (max-width: 30em) { /* 480px = 30em */
+/* Responsiveness for Smartphones (max-width: 480px) */
+@media (max-width: 30em) { /* 480px */
+    /* Header title adjustment */
     header h1 {
-        font-size: 1.875em; /* 30px = 1.875em */
+        font-size: 1.875em; /* Smaller font size for smartphone screens */
+        bottom: 0.9375em; /* Adjusts bottom spacing for better placement */
     }
 
+    /* Navigation adjustments */
     nav table th {
-        font-size: 0.875em; /* 14px = 0.875em */
+        font-size: 0.875em; /* Reduces font size for better readability */
     }
 
-    #forecast img {
-        width: 3em; /* 48px = 3em */
-        height: 3em;
-    }
-
-    #forecast th, #forecast td {
-        font-size: 0.75em; /* 12px = 0.75em */
-    }
-    
-    #name, #address, #comment {
-        width: 100%; /* Full-width input fields */
-    }
-
-    .row {
-        padding: 0.3125em 0; /* 5px = 0.3125em */
-    }
-
-    footer {
-        font-size: 0.625em; /* 10px = 0.625em */
-    }
-    /* Weather list items */
+    /* Weather list adjustments */
     #meteo ul {
-        width: 100%; /* Adjusts to smartphone screen width */
+        width: 100%; /* Full-width list for smartphones */
         padding-left: 0; /* Removes padding for proper alignment */
     }
 
-    /* Form fields */
+    /* Weather image adjustments */
+    #forecast img {
+        width: 3em; /* Smaller image size for smartphones */
+        height: 3em;
+    }
+
+    /* Forecast table adjustments */
+    #forecast th, #forecast td {
+        font-size: 0.75em; /* Smaller text in the forecast table */
+    }
+
+    /* Form fields adjustments */
     #name, #address, #comment {
-        width: 100%; /* Full-width form fields */
-        margin: 0 auto;
+        width: 100%; /* Full-width input fields */
+        margin-bottom: 1em; /* Adds space between form fields */
     }
 
     .row {
-        flex-direction: column; /* Form elements are stacked vertically */
+        flex-direction: column; /* Stacks form fields vertically */
         padding: 0.3125em 0; /* Adds spacing between form elements */
+        align-items: flex-start; /* Aligns labels and fields to the left */
     }
 
+    /* Form buttons */
     input[type=submit], input[type=reset] {
-        width: 100%; /* Buttons take full width */
-        margin-right: 0; /* Removes margin for mobile adaptation */
+        width: 100%; /* Full-width buttons */
+        margin-right: 0; /* Removes margin */
+        margin-top: 0.625em; /* Adds margin to separate buttons from form fields */
+    }
+
+    /* Footer adjustments */
+    footer {
+        font-size: 0.625em; /* Smaller font size for the footer */
+    }
+
+    #column1, #column3 {
+        width: 100%; /* Full-width columns in the footer */
+        text-align: center; /* Centers text for better alignment */
+        padding: 0.625em 0; /* Adds padding for better spacing */
     }
 }
