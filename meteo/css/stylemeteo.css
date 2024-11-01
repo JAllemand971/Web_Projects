@@ -71,10 +71,16 @@ nav a:active {
     padding-left: 15px;
 }
 
-#meteo dd {
-    width: 200px; /* Width as specified in the instructions */
+#meteo ul{
+    width:200px; /* Largeur defini par l'enonce */
+    list-style-type: none; /* Liste sans numerotation */
     text-align: center;
-    background-color: grey; /* Background color as specified */
+    padding-left: 15px;
+	
+}
+
+#meteo li{
+    background-color: grey;	
 }
 
 #meteo a:link {
