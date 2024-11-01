@@ -288,6 +288,26 @@ footer a:active {
         text-align: center;
         padding: 0.625em 0; /* 10px = 0.625em */
     }
+#meteo ul {
+        width: 100%; /* Adjusts to screen width */
+        padding-left: 0; /* Removes padding for better alignment */
+    }
+
+    /* Form fields */
+    #name, #address, #comment {
+        width: 100%; /* Form fields take full width */
+    }
+
+    .row {
+        flex-direction: column; /* Form fields stack vertically */
+        align-items: flex-start; /* Align left for better readability */
+    }
+
+    input[type=submit], input[type=reset] {
+        width: 100%; /* Buttons take full width */
+        margin-right: 0; /* Removes margin */
+    }    
+}
 
 /* Smartphones (max-width: 30em) { /* 480px = 30em */
     header h1 {
@@ -318,3 +338,24 @@ footer a:active {
     footer {
         font-size: 0.625em; /* 10px = 0.625em */
     }
+    /* Weather list items */
+    #meteo ul {
+        width: 100%; /* Adjusts to smartphone screen width */
+        padding-left: 0; /* Removes padding for proper alignment */
+    }
+
+    /* Form fields */
+    #name, #address, #comment {
+        width: 100%; /* Full-width form fields */
+    }
+
+    .row {
+        flex-direction: column; /* Form elements are stacked vertically */
+        padding: 0.3125em 0; /* Adds spacing between form elements */
+    }
+
+    input[type=submit], input[type=reset] {
+        width: 100%; /* Buttons take full width */
+        margin-right: 0; /* Removes margin for mobile adaptation */
+    }
+}
