@@ -1,0 +1,238 @@
+/* BODY */
+body {
+    background-color: rgb(0, 204, 255); /* Light blue background */
+}
+
+/* CONTAINER */
+#container {
+    display: flex;
+    flex-direction: column; /* Column layout for site sections */
+    margin: 0 auto; /* Centers the container elements */
+    width: 920px; /* Width as specified in the instructions */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white; /* White background */
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    height: 120px; /* Height of the image nuages_708jpg */
+    background-image: url("../images/nuages_708.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    width: 100%;
+    position: relative; /* Positions the title at the top with 10px left padding */
+    left: 10px;
+    bottom: 25px;
+    color: yellow;
+    font-size: 60px;
+}
+
+/* NAV */
+nav {
+    width: 100%;
+    height: 40px;
+    background-color: yellow;
+}
+
+nav table {
+    width: 100%;
+}
+
+nav table th {
+    color: blue;
+    padding: 10px;
+}
+
+nav a:link {
+    color: blue;
+}
+nav a:visited {
+    color: red;
+}
+nav a:hover {
+    color: blueviolet;
+}
+nav a:active {
+    color: green;
+} /* Link styles */
+
+/* MAIN METEO */
+#meteo {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+#meteo p {
+    padding-left: 15px;
+}
+
+#meteo dd {
+    width: 200px; /* Width as specified in the instructions */
+    text-align: center;
+    background-color: grey; /* Background color as specified */
+}
+
+#meteo a:link {
+    color: green;
+}
+#meteo a:visited {
+    color: blue;
+}
+#meteo a:hover {
+    color: pink;
+}
+#meteo a:active {
+    color: red;
+    background-color: white;
+} /* Link styles */
+
+/* MAIN FORECAST */
+#forecast {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+#forecast table {
+    width: 90%; /* Table width is 90% */
+    margin: 0 auto; /* Centers the table */
+    margin-bottom: 25px; /* Creates space with the footer */
+    border-collapse: collapse; /* Collapses the table cells */
+}
+
+#forecast p {
+    padding-left: 15px;
+}
+
+#forecast th {
+    color: white;
+    background-color: #33CCCC; /* Light blue background for table headers */
+    border: 1px solid black;
+    vertical-align: middle; /* Vertically centers content */
+}
+
+#forecast th:first-child {
+    border-right: 1px solid white; /* First header has a white right border */
+}
+
+#forecast th + th {
+    border-right: 1px solid white; /* All following headers have a white right border */
+}
+
+#forecast th:last-child {
+    border-right: 1px solid black; /* Last header has a black right border */
+}
+
+#forecast td {
+    text-align: center; /* Centers text in table cells */
+    border: 1px solid black;
+}
+
+#min {
+    color: blue; /* Minimum temperature in blue */
+}
+
+#max {
+    color: red; /* Maximum temperature in red */
+}
+
+#forecast img {
+    width: 96px; /* Original image dimensions */
+    height: 96px;
+}
+
+/* MAIN COMMENTS */
+#comments {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+#comments p {
+    padding-left: 15px;
+}
+
+#comments form {
+    display: flex;
+    flex-direction: column; /* Form elements are displayed in columns */
+    margin-bottom: 25px; /* Creates space with the footer */
+    padding-left: 15px;
+}
+
+.row {
+    display: flex; /* Elements are aligned in a row by default */
+    align-items: center;
+    margin: 8px 0;
+}
+
+#comments label {
+    width: 20%; /* Used to space labels from inputs */
+    text-align: left;
+}
+
+#name {
+    width: 20%; /* Input width */
+    padding: 6px 6px; /* Padding inside the form cells */
+}
+
+#address {
+    width: 20%; /* Input width */
+    padding: 6px 6px; /* Padding inside the form cells */
+}
+
+#comment {
+    width: 40%; /* Input width */
+    padding: 6px 6px;
+}
+
+input[type=submit], input[type=reset] {
+    width: auto;
+    display: inline-block; /* Aligns the reset and submit buttons */
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    background-color: skyblue; /* Footer background color */
+}
+
+footer table {
+    width: 100%;
+}
+
+footer td {
+    border: 0px solid black; /* Removes table borders */
+    text-align: center;
+}
+
+#column1 {
+    width: 20%; /* Width as specified in the instructions */
+    text-align: left;
+    vertical-align: top;
+}
+
+#column3 {
+    width: 20%; /* Width as specified in the instructions */
+    text-align: right;
+    vertical-align: top;
+}
+
+footer a:link {
+    color: blue;
+}
+footer a:visited {
+    color: rebeccapurple;
+}
+footer a:hover {
+    color: magenta;
+}
+footer a:active {
+    color: yellowgreen;
+} /* Link styles */
