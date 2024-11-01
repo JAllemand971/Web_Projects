@@ -242,72 +242,62 @@ footer a:active {
 
 
 /* RESPONSIVE DESIGN FOR SMARTPHONES (max-width: 480px) */
-@media (max-width: 480px) {
+@media (max-width: 30em) { /* 480px */
+    /* Header title adjustment */
     header h1 {
-        font-size: 30px; /* Smaller title for smartphones */
-        margin: 0 auto; /* Adjusts position of the title */
-        text-align: center; /* Center the title */
+        font-size: 1.875em; /* Smaller font size for smartphone screens */
+        bottom: 0.9375em; /* Adjusts bottom spacing for better placement */
     }
 
+    /* Navigation adjustments */
     nav table th {
-        font-size: 14px; /* Smaller font for navigation */
-        text-align: center; /* Center text in navigation headers */
+        font-size: 0.875em; /* Reduces font size for better readability */
     }
 
+    /* Weather list adjustments */
     #meteo ul {
-        width: 100%; /* Make the weather list responsive */
-        padding-left: 0; /* Remove padding for better centering */
-        margin: 0; /* Remove margin to prevent overflow */
-        list-style-type: none; /* Ensure no list bullets */
+        width: 100%; /* Full-width list for smartphones */
+        padding-left: 0; /* Removes padding for proper alignment */
     }
 
-    #meteo li {
-        text-align: center; /* Center list items */
-        padding: 10px; /* Add padding for spacing */
-    }
-
+    /* Weather image adjustments */
     #forecast img {
-        width: 48px; /* Further reduce image size */
-        height: 48px;
+        width: 3em; /* Smaller image size for smartphones */
+        height: 3em;
     }
 
+    /* Forecast table adjustments */
     #forecast th, #forecast td {
-        font-size: 12px; /* Smaller text for tables */
-        text-align: center; /* Center text in table cells */
+        font-size: 0.75em; /* Smaller text in the forecast table */
     }
 
-    #comments form {
-        padding-left: 0; /* Remove extra padding */
-        display: flex; /* Ensure form elements are displayed in flex */
-        flex-direction: column; /* Stack form elements vertically */
-        align-items: center; /* Center form elements */
-        width: 100%; /* Ensure form takes full width */
-        margin: 0; /* Remove margin to prevent overflow */
-    }
-
+    /* Form fields adjustments */
     #name, #address, #comment {
-        width: 90%; /* Use 90% width to fit inputs nicely */
-        margin: 5px 0; /* Adds margin between inputs */
-        padding: 6px; /* Padding for better touch interaction */
+        width: 100%; /* Full-width input fields */
+        margin-bottom: 1em; /* Adds space between form fields */
     }
 
+    .row {
+        flex-direction: column; /* Stacks form fields vertically */
+        padding: 0.3125em 0; /* Adds spacing between form elements */
+        align-items: flex-start; /* Aligns labels and fields to the left */
+    }
+
+    /* Form buttons */
     input[type=submit], input[type=reset] {
-        width: 90%; /* Full-width buttons for better touch interaction */
-        margin-right: 0; /* Remove margin */
-        padding: 10px; /* Add padding for touch targets */
+        width: 100%; /* Full-width buttons */
+        margin-right: 0; /* Removes margin */
+        margin-top: 0.625em; /* Adds margin to separate buttons from form fields */
     }
 
+    /* Footer adjustments */
     footer {
-        font-size: 10px; /* Smallest font for footer */
-        text-align: center; /* Center footer text */
+        font-size: 0.625em; /* Smaller font size for the footer */
     }
 
-    footer table {
-        width: 100%; /* Full width for footer table */
-        margin: 0; /* Remove margin */
-    }
-
-    footer td {
-        padding: 10px; /* Add padding for spacing */
+    #column1, #column3 {
+        width: 100%; /* Full-width columns in the footer */
+        text-align: center; /* Centers text for better alignment */
+        padding: 0.625em 0; /* Adds padding for better spacing */
     }
 }
