@@ -139,11 +139,11 @@ nav a:active {
     border: 1px solid black;
 }
 
-#min {
+.min {
     color: blue; /* Minimum temperature in blue */
 }
 
-#max {
+.max {
     color: red; /* Maximum temperature in red */
 }
 
