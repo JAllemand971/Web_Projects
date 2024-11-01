@@ -1,22 +1,24 @@
 /* BODY */
 body {
-    background-color: rgb(0, 204, 255); /* Light blue background */
+    background-color: rgb(0, 204, 255);
+    font-size: 1em; /* Sets base font size */
 }
 
 /* CONTAINER */
 #container {
     display: flex;
-    flex-direction: column; /* Column layout for site sections */
-    margin: 0 auto; /* Centers the container elements */
-    width: 920px; /* Width as specified in the instructions */
+    flex-direction: column;
+    margin: 0 auto;
+    width: 57.5em; /* Approx 920px converted to em */
     font-family: Arial, Helvetica, sans-serif;
-    background-color: white; /* White background */
+    background-color: white;
+    padding: 1em;
 }
 
 /* HEADER */
 header {
     width: 100%;
-    height: 120px; /* Height of the image nuages_708jpg */
+    height: 7.5em; /* 120px to em */
     background-image: url("../images/nuages_708.jpg");
     background-size: cover;
     background-position: center;
@@ -25,14 +27,14 @@ header {
 header h1 {
     width: 100%;
     color: yellow;
-    font-size: 60px;
-    margin-left: 15px;
+    font-size: 3.75em; /* 60px to em */
+    margin-left: 0.9375em;
 }
 
 /* NAV */
 nav {
     width: 100%;
-    height: 40px;
+    height: 2.5em; /* 40px to em */
     background-color: yellow;
 }
 
@@ -42,7 +44,8 @@ nav table {
 
 nav table th {
     color: blue;
-    padding: 10px;
+    padding: 0.625em; /* 10px to em */
+    font-size: 1em;
 }
 
 nav a:link {
@@ -56,7 +59,7 @@ nav a:hover {
 }
 nav a:active {
     color: green;
-} /* Link styles */
+}
 
 /* MAIN METEO */
 #meteo {
@@ -66,14 +69,14 @@ nav a:active {
 }
 
 #meteo p {
-    padding-left: 15px;
+    padding-left: 0.9375em;
 }
 
 #meteo ul {
-    width: 200px; /* Largeur defini par l'enonce */
-    list-style-type: none; /* Liste sans numerotation */
+    width: 12.5em; /* 200px to em */
+    list-style-type: none;
     text-align: center;
-    padding-left: 15px;
+    padding-left: 0.9375em;
 }
 
 #meteo li {
@@ -92,7 +95,7 @@ nav a:active {
 #meteo a:active {
     color: red;
     background-color: white;
-} /* Link styles */
+}
 
 /* MAIN FORECAST */
 #forecast {
@@ -102,51 +105,51 @@ nav a:active {
 }
 
 #forecast table {
-    width: 90%; /* Table width is 90% */
-    margin: 0 auto; /* Centers the table */
-    margin-bottom: 25px; /* Creates space with the footer */
-    border-collapse: collapse; /* Collapses the table cells */
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1.5625em; /* 25px to em */
+    border-collapse: collapse;
 }
 
 #forecast p {
-    padding-left: 15px;
+    padding-left: 0.9375em;
 }
 
 #forecast th {
     color: white;
-    background-color: #33CCCC; /* Light blue background for table headers */
-    border: 1px solid black;
-    vertical-align: middle; /* Vertically centers content */
+    background-color: #33CCCC;
+    border: 0.0625em solid black; /* 1px to em */
+    vertical-align: middle;
 }
 
 #forecast th:first-child {
-    border-right: 1px solid white; /* First header has a white right border */
+    border-right: 0.0625em solid white;
 }
 
 #forecast th + th {
-    border-right: 1px solid white; /* All following headers have a white right border */
+    border-right: 0.0625em solid white;
 }
 
 #forecast th:last-child {
-    border-right: 1px solid black; /* Last header has a black right border */
+    border-right: 0.0625em solid black;
 }
 
 #forecast td {
-    text-align: center; /* Centers text in table cells */
-    border: 1px solid black;
+    text-align: center;
+    border: 0.0625em solid black;
 }
 
 .min {
-    color: blue; /* Minimum temperature in blue */
+    color: blue;
 }
 
 .max {
-    color: red; /* Maximum temperature in red */
+    color: red;
 }
 
 #forecast img {
-    width: 96px; /* Original image dimensions */
-    height: 96px;
+    width: 6em;
+    height: 6em;
 }
 
 /* MAIN COMMENTS */
@@ -157,53 +160,42 @@ nav a:active {
 }
 
 #comments p {
-    padding-left: 15px;
+    padding-left: 0.9375em;
 }
 
 #comments form {
     display: flex;
-    flex-direction: column; /* Form elements are displayed in columns */
-    margin-bottom: 25px; /* Creates space with the footer */
-    padding-left: 15px;
+    flex-direction: column;
+    margin-bottom: 1.5625em;
+    padding-left: 0.9375em;
 }
 
 .row {
-    display: flex; /* Elements are aligned in a row by default */
+    display: flex;
     align-items: center;
-    margin: 8px 0;
+    margin: 0.5em 0;
 }
 
 #comments label {
-    width: 20%; /* Used to space labels from inputs */
+    width: 12.5%; /* Adjusted for better proportion with em */
     text-align: left;
 }
 
-#name {
-    width: 20%; /* Input width */
-    padding: 6px 6px; /* Padding inside the form cells */
-}
-
-#address {
-    width: 20%; /* Input width */
-    padding: 6px 6px; /* Padding inside the form cells */
-}
-
-#comment {
-    width: 40%; /* Input width */
-    padding: 6px 6px;
+#name, #address, #comment {
+    padding: 0.375em;
 }
 
 input[type=submit], input[type=reset] {
     width: auto;
-    display: inline-block; /* Aligns the reset and submit buttons */
-    margin-top: 10px;
-    margin-right: 10px;
+    display: inline-block;
+    margin-top: 0.625em;
+    margin-right: 0.625em;
 }
 
 /* FOOTER */
 footer {
     width: 100%;
-    background-color: skyblue; /* Footer background color */
+    background-color: skyblue;
 }
 
 footer table {
@@ -211,102 +203,77 @@ footer table {
 }
 
 footer td {
-    border: 0px solid black; /* Removes table borders */
+    border: 0;
     text-align: center;
 }
 
-#column1 {
-    width: 20%; /* Width as specified in the instructions */
-    text-align: left;
-    vertical-align: top;
-}
-
-#column3 {
-    width: 20%; /* Width as specified in the instructions */
-    text-align: right;
-    vertical-align: top;
-}
-
-footer a:link {
-    color: blue;
-}
-footer a:visited {
-    color: rebeccapurple;
-}
-footer a:hover {
-    color: magenta;
-}
-footer a:active {
-    color: yellowgreen;
-} /* Link styles */
-
-/* RESPONSIVE STYLES FOR TABLETS */
-@media (max-width: 768px) {
+/* Responsive styles for tablets */
+@media (max-width: 48em) { /* Approx 768px */
     #container {
-        width: 100%; /* Adjust width to fit smaller screens */
-        padding: 10px;
+        width: 100%;
+        padding: 1em;
     }
 
     header h1 {
-        font-size: 36px; /* Smaller font for tablet header */
-        margin-left: 10px;
+        font-size: 2.25em;
+        margin-left: 0.625em;
     }
 
     nav table th {
-        padding: 5px; /* Smaller padding for menu items */
-        font-size: 14px; /* Smaller font size */
+        padding: 0.3125em;
+        font-size: 0.875em;
     }
 
     #forecast table, #comments form {
-        width: 100%; /* Use full width */
+        width: 100%;
     }
 
     #name, #address, #comment {
-        width: 80%; /* Expand form inputs to fit more naturally */
+        width: 80%;
     }
 
     footer table {
-        font-size: 12px; /* Adjust font size for footer text */
+        font-size: 0.75em;
     }
 }
 
-/* RESPONSIVE STYLES FOR SMARTPHONES */
-@media (max-width: 480px) {
+/* Responsive styles for smartphones */
+@media (max-width: 30em) { /* Approx 480px */
     #container {
-        width: 100%; /* Full width on small screens */
-        padding: 5px;
+        width: 100%;
+        padding: 0.5em;
     }
 
     header h1 {
-        font-size: 24px; /* Even smaller header font size */
-        margin-left: 5px;
+        font-size: 1.5em;
+        margin-left: 0.3125em;
     }
 
     nav table th {
-        padding: 3px;
-        font-size: 12px; /* Smaller font for navigation */
+        padding: 0.1875em;
+        font-size: 0.75em;
     }
 
     #forecast table {
-        width: 100%; /* Full width for the table */
-        font-size: 10px; /* Smaller font for table text */
+        width: 100%;
+        font-size: 0.625em;
     }
 
     #forecast img {
-        width: 48px;
-        height: 48px; /* Smaller images */
+        width: 3em;
+        height: 3em;
     }
 
     #comments label, #name, #address, #comment {
-        width: 100%; /* Full width for form inputs */
+        width: 100%;
     }
 
     input[type=submit], input[type=reset] {
-        width: 100%; /* Full width for buttons */
-        margin-right: 0; /* Center-align buttons */
+        width: 100%;
+        margin-right: 0;
     }
 
     footer table {
-        font-size: 10px;
+        font-size: 0.625em;
     }
 }
