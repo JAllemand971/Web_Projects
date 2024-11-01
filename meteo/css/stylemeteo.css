@@ -26,7 +26,7 @@ header h1 {
     width: 100%;
     color: yellow;
     font-size: 60px;
-    padding-left: 15px;
+    margin-left: 15px;
 }
 
 /* NAV */
@@ -239,3 +239,75 @@ footer a:hover {
 footer a:active {
     color: yellowgreen;
 } /* Link styles */
+
+
+/* RESPONSIVE DESIGN FOR SMARTPHONES (max-width: 480px) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 30px; /* Smaller title for smartphones */
+        margin: 0 auto; /* Adjusts position of the title */
+        text-align: center; /* Center the title */
+    }
+
+    nav table th {
+        font-size: 14px; /* Smaller font for navigation */
+        text-align: center; /* Center text in navigation headers */
+    }
+
+    #meteo ul {
+        width: 100%; /* Make the weather list responsive */
+        padding-left: 0; /* Remove padding for better centering */
+        margin: 0; /* Remove margin to prevent overflow */
+        list-style-type: none; /* Ensure no list bullets */
+    }
+
+    #meteo li {
+        text-align: center; /* Center list items */
+        padding: 10px; /* Add padding for spacing */
+    }
+
+    #forecast img {
+        width: 48px; /* Further reduce image size */
+        height: 48px;
+    }
+
+    #forecast th, #forecast td {
+        font-size: 12px; /* Smaller text for tables */
+        text-align: center; /* Center text in table cells */
+    }
+
+    #comments form {
+        padding-left: 0; /* Remove extra padding */
+        display: flex; /* Ensure form elements are displayed in flex */
+        flex-direction: column; /* Stack form elements vertically */
+        align-items: center; /* Center form elements */
+        width: 100%; /* Ensure form takes full width */
+        margin: 0; /* Remove margin to prevent overflow */
+    }
+
+    #name, #address, #comment {
+        width: 90%; /* Use 90% width to fit inputs nicely */
+        margin: 5px 0; /* Adds margin between inputs */
+        padding: 6px; /* Padding for better touch interaction */
+    }
+
+    input[type=submit], input[type=reset] {
+        width: 90%; /* Full-width buttons for better touch interaction */
+        margin-right: 0; /* Remove margin */
+        padding: 10px; /* Add padding for touch targets */
+    }
+
+    footer {
+        font-size: 10px; /* Smallest font for footer */
+        text-align: center; /* Center footer text */
+    }
+
+    footer table {
+        width: 100%; /* Full width for footer table */
+        margin: 0; /* Remove margin */
+    }
+
+    footer td {
+        padding: 10px; /* Add padding for spacing */
+    }
+}
