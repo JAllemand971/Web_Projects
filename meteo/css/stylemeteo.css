@@ -235,12 +235,12 @@ footer a:active {
     /* Container adjustments */
     #container {
         width: 100%; /* Adjusts container to 100% for smaller screens */
-        padding: 1em; /* Adds padding for better spacing */
     }
 
     /* Header title adjustment */
     header h1 {
         font-size: 2.5em; /* Reduces font size for the weather title */
+        margin-top: 1em;
         padding: 1em;
     }
 
@@ -277,6 +277,10 @@ footer a:active {
         margin-bottom: 1em; /* Adds space between form fields */
     }
 
+   input {
+        width: 80%;
+    }
+    
     /* Form buttons */
     input[type=submit], input[type=reset] {
         width: 100%; /* Full-width buttons for better touch interaction */
@@ -302,7 +306,7 @@ footer a:active {
     /* Header title adjustment */
     header h1 {
         font-size: 1.875em; /* Smaller font size for smartphone screens */
-        padding: 1em;
+        margin-top: 1em;
     }
 
     /* Navigation adjustments */
@@ -331,6 +335,10 @@ footer a:active {
     #name, #address, #comment {
         width: 80%; /* Full-width input fields */
         margin-bottom: 1em; /* Adds space between form fields */
+    }
+
+    input {
+        width: 80%;
     }
 
     .row {
