@@ -242,7 +242,12 @@ footer a:active {
 
 
 /* RESPONSIVE DESIGN FOR SMARTPHONES (max-width: 480px) */
-@media (max-width: 30em) { /* 480px */
+@media only screen and (max-width: 480px) { /* 480px */
+
+    header, main, footer, .container {
+        width: 100%; /* Les colonnes occupent toute la largeur */
+    }
+    
     /* Header title adjustment */
     header h1 {
         font-size: 1.875em; /* Smaller font size for smartphone screens */
@@ -256,8 +261,8 @@ footer a:active {
 
     /* Weather list adjustments */
     #meteo ul {
-        width: 100%; /* Full-width list for smartphones */
-        padding-left: 0; /* Removes padding for proper alignment */
+        width: 60%; /* Full-width list for smartphones */
+       margin: 0 auto; /* Removes padding for proper alignment */
     }
 
     /* Weather image adjustments */
@@ -273,7 +278,9 @@ footer a:active {
 
     /* Form fields adjustments */
     #name, #address, #comment {
-        width: 100%; /* Full-width input fields */
+        width: 60%; /* Full-width input fields */
+        margin-right: auto;
+        margin-left: auto;
         margin-bottom: 1em; /* Adds space between form fields */
     }
 
