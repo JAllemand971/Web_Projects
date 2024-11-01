@@ -239,9 +239,8 @@ footer td {
     }
 
     #name, #address, #comment {
-        width: 100%;
-        max-width: 100%; /* Ensure it fits within container */
-        padding: 0.5em;
+        width: 80%;
+        max-width: 80%; /* Ensure it fits within container */
     }
 
     input[type=submit], input[type=reset] {
@@ -294,8 +293,8 @@ footer td {
     }
 
     #comments label, #name, #address, #comment {
-        width: 100%;
-        max-width: 100%;
+        width: 80%;
+        max-width: 80%;
     }
 
     input[type=submit], input[type=reset] {
@@ -307,7 +306,7 @@ footer td {
 
     footer table {
         font-size: 0.625em;
-        width: 100%;
+        width: 90%;
     }
 
     footer img {
