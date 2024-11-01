@@ -71,15 +71,14 @@ nav a:active {
     padding-left: 15px;
 }
 
-#meteo ul{
-    width:200px; /* Largeur defini par l'enonce */
+#meteo ul {
+    width: 200px; /* Largeur defini par l'enonce */
     list-style-type: none; /* Liste sans numerotation */
     text-align: center;
     padding-left: 15px;
-	
 }
 
-#meteo li{
+#meteo li {
     background-color: grey;	
 }
 
@@ -242,3 +241,95 @@ footer a:hover {
 footer a:active {
     color: yellowgreen;
 } /* Link styles */
+
+/* RESPONSIVE DESIGN FOR TABLETS AND SMARTPHONE */
+@media (max-width: 920px) {
+    #container {
+        width: 100%; /* Adjust width to fit smaller screens */
+        padding: 10px; /* Add padding for better spacing */
+    }
+
+    header h1 {
+        font-size: 40px; /* Smaller font size for tablets and smartphones */
+        bottom: 15px;
+    }
+
+    nav table th {
+        padding: 5px; /* Reduce padding in navigation */
+    }
+
+    #meteo ul, #forecast table {
+        width: 100%; /* Make the lists and tables responsive */
+    }
+
+    #forecast img {
+        width: 72px; /* Reduce the size of the images in the forecast section */
+        height: 72px;
+    }
+
+    #forecast th, #forecast td {
+        font-size: 14px; /* Reduce font size in tables */
+    }
+
+    /* Adjust form fields in the comments section */
+    #name, #address, #comment {
+        width: 100%; /* Make input fields take full width */
+    }
+
+    #comments form {
+        padding-left: 0; /* Remove extra padding for smaller screens */
+    }
+
+    .row {
+        flex-direction: column; /* Stack form elements vertically on smaller screens */
+        align-items: flex-start; /* Align form labels and fields */
+    }
+
+    input[type=submit], input[type=reset] {
+        width: 100%; /* Full-width buttons for better touch interaction */
+        margin-right: 0; /* Remove margin */
+    }
+
+    footer table, footer td {
+        font-size: 12px; /* Smaller font in the footer */
+        text-align: center;
+    }
+
+    #column1, #column3 {
+        width: 100%; /* Full width columns in footer */
+        text-align: center;
+        padding: 10px 0; /* Add padding for better spacing */
+    }
+}
+
+/* Smartphones (max-width: 480px) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 30px; /* Even smaller title for smartphones */
+    }
+
+    nav table th {
+        font-size: 14px; /* Smaller font for navigation */
+    }
+
+    #forecast img {
+        width: 48px; /* Further reduce image size */
+        height: 48px;
+    }
+
+    #forecast th, #forecast td {
+        font-size: 12px; /* Smaller text for tables */
+    }
+    
+    #name, #address, #comment {
+        width: 100%; /* Full-width input fields */
+    }
+
+    .row {
+        padding: 5px 0; /* Add more padding between form elements */
+    }
+
+    footer {
+        font-size: 10px; /* Smallest font for footer */
+    }
+}
