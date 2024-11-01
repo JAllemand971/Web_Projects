@@ -239,3 +239,74 @@ footer a:hover {
 footer a:active {
     color: yellowgreen;
 } /* Link styles */
+
+/* RESPONSIVE STYLES FOR TABLETS */
+@media (max-width: 768px) {
+    #container {
+        width: 100%; /* Adjust width to fit smaller screens */
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 36px; /* Smaller font for tablet header */
+        margin-left: 10px;
+    }
+
+    nav table th {
+        padding: 5px; /* Smaller padding for menu items */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    #forecast table, #comments form {
+        width: 100%; /* Use full width */
+    }
+
+    #name, #address, #comment {
+        width: 80%; /* Expand form inputs to fit more naturally */
+    }
+
+    footer table {
+        font-size: 12px; /* Adjust font size for footer text */
+    }
+}
+
+/* RESPONSIVE STYLES FOR SMARTPHONES */
+@media (max-width: 480px) {
+    #container {
+        width: 100%; /* Full width on small screens */
+        padding: 5px;
+    }
+
+    header h1 {
+        font-size: 24px; /* Even smaller header font size */
+        margin-left: 5px;
+    }
+
+    nav table th {
+        padding: 3px;
+        font-size: 12px; /* Smaller font for navigation */
+    }
+
+    #forecast table {
+        width: 100%; /* Full width for the table */
+        font-size: 10px; /* Smaller font for table text */
+    }
+
+    #forecast img {
+        width: 48px;
+        height: 48px; /* Smaller images */
+    }
+
+    #comments label, #name, #address, #comment {
+        width: 100%; /* Full width for form inputs */
+    }
+
+    input[type=submit], input[type=reset] {
+        width: 100%; /* Full width for buttons */
+        margin-right: 0; /* Center-align buttons */
+    }
+
+    footer table {
+        font-size: 10px;
+    }
+}
