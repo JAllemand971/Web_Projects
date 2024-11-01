@@ -207,7 +207,9 @@ footer td {
     text-align: center;
 }
 
-/* Responsive styles for tablets */
+/* Responsive styles for tablets and smartphones */
+
+/* Adjust for tablets */
 @media (max-width: 48em) { /* Approx 768px */
     #container {
         width: 100%;
@@ -219,6 +221,10 @@ footer td {
         margin-left: 0.625em;
     }
 
+    nav table {
+        width: 100%;
+    }
+
     nav table th {
         padding: 0.3125em;
         font-size: 0.875em;
@@ -228,16 +234,35 @@ footer td {
         width: 100%;
     }
 
+    #forecast table th, #forecast table td {
+        padding: 0.5em; /* Adjust padding */
+    }
+
     #name, #address, #comment {
-        width: 80%;
+        width: 100%;
+        max-width: 100%; /* Ensure it fits within container */
+        padding: 0.5em;
+    }
+
+    input[type=submit], input[type=reset] {
+        width: 100%;
+        max-width: 100%; /* Full width for buttons */
+        margin-top: 0.5em;
+        margin-right: 0;
     }
 
     footer table {
         font-size: 0.75em;
+        width: 100%;
+    }
+
+    footer img {
+        max-width: 100%; /* Prevents overflow of images */
+        height: auto;
     }
 }
 
-/* Responsive styles for smartphones */
+/* Adjust for smartphones */
 @media (max-width: 30em) { /* Approx 480px */
     #container {
         width: 100%;
@@ -259,21 +284,35 @@ footer td {
         font-size: 0.625em;
     }
 
+    #forecast table th, #forecast table td {
+        padding: 0.25em; /* Reduce padding for smaller screens */
+    }
+
     #forecast img {
-        width: 3em;
-        height: 3em;
+        width: 3em; /* Smaller images on mobile */
+        height: auto;
     }
 
     #comments label, #name, #address, #comment {
         width: 100%;
+        max-width: 100%;
     }
 
     input[type=submit], input[type=reset] {
         width: 100%;
+        max-width: 100%;
         margin-right: 0;
+        margin-top: 0.5em;
     }
 
     footer table {
         font-size: 0.625em;
+        width: 100%;
+    }
+
+    footer img {
+        max-width: 100%; /* Full width to prevent overflow */
+        height: auto;
     }
 }
+
