@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column; /* Column layout for site sections */
     margin: 0 auto; /* Centers the container elements */
-    width: 920px; /* Width as specified in the instructions */
+    width: 57.5em; /* Width converted to em (920px = 57.5em assuming 16px base font size) */
     font-family: Arial, Helvetica, sans-serif;
     background-color: white; /* White background */
 }
@@ -16,7 +16,7 @@ body {
 /* HEADER */
 header {
     width: 100%;
-    height: 120px; /* Height of the image nuages_708jpg */
+    height: 7.5em; /* Height converted to em (120px = 7.5em) */
     background-image: url("../images/nuages_708.jpg");
     background-size: cover;
     background-position: center;
@@ -25,16 +25,16 @@ header {
 header h1 {
     width: 100%;
     position: relative; /* Positions the title at the top with 10px left padding */
-    left: 10px;
-    bottom: 25px;
+    left: 0.625em; /* 10px = 0.625em */
+    bottom: 1.5625em; /* 25px = 1.5625em */
     color: yellow;
-    font-size: 60px;
+    font-size: 3.75em; /* 60px = 3.75em */
 }
 
 /* NAV */
 nav {
     width: 100%;
-    height: 40px;
+    height: 2.5em; /* 40px = 2.5em */
     background-color: yellow;
 }
 
@@ -44,7 +44,7 @@ nav table {
 
 nav table th {
     color: blue;
-    padding: 10px;
+    padding: 0.625em; /* 10px = 0.625em */
 }
 
 nav a:link {
@@ -68,18 +68,17 @@ nav a:active {
 }
 
 #meteo p {
-    padding-left: 15px;
+    padding-left: 0.9375em; /* 15px = 0.9375em */
 }
 
-#meteo ul{
-    width:200px; /* Largeur defini par l'enonce */
+#meteo ul {
+    width: 12.5em; /* 200px = 12.5em */
     list-style-type: none; /* Liste sans numerotation */
     text-align: center;
-    padding-left: 15px;
-	
+    padding-left: 0.9375em; /* 15px = 0.9375em */
 }
 
-#meteo li{
+#meteo li {
     background-color: grey;	
 }
 
@@ -107,36 +106,36 @@ nav a:active {
 #forecast table {
     width: 90%; /* Table width is 90% */
     margin: 0 auto; /* Centers the table */
-    margin-bottom: 25px; /* Creates space with the footer */
+    margin-bottom: 1.5625em; /* 25px = 1.5625em */
     border-collapse: collapse; /* Collapses the table cells */
 }
 
 #forecast p {
-    padding-left: 15px;
+    padding-left: 0.9375em; /* 15px = 0.9375em */
 }
 
 #forecast th {
     color: white;
     background-color: #33CCCC; /* Light blue background for table headers */
-    border: 1px solid black;
+    border: 0.0625em solid black; /* 1px = 0.0625em */
     vertical-align: middle; /* Vertically centers content */
 }
 
 #forecast th:first-child {
-    border-right: 1px solid white; /* First header has a white right border */
+    border-right: 0.0625em solid white; /* 1px = 0.0625em */
 }
 
 #forecast th + th {
-    border-right: 1px solid white; /* All following headers have a white right border */
+    border-right: 0.0625em solid white; /* 1px = 0.0625em */
 }
 
 #forecast th:last-child {
-    border-right: 1px solid black; /* Last header has a black right border */
+    border-right: 0.0625em solid black; /* 1px = 0.0625em */
 }
 
 #forecast td {
     text-align: center; /* Centers text in table cells */
-    border: 1px solid black;
+    border: 0.0625em solid black; /* 1px = 0.0625em */
 }
 
 .min {
@@ -148,8 +147,8 @@ nav a:active {
 }
 
 #forecast img {
-    width: 96px; /* Original image dimensions */
-    height: 96px;
+    width: 6em; /* 96px = 6em */
+    height: 6em;
 }
 
 /* MAIN COMMENTS */
@@ -160,47 +159,42 @@ nav a:active {
 }
 
 #comments p {
-    padding-left: 15px;
+    padding-left: 0.9375em; /* 15px = 0.9375em */
 }
 
 #comments form {
     display: flex;
     flex-direction: column; /* Form elements are displayed in columns */
-    margin-bottom: 25px; /* Creates space with the footer */
-    padding-left: 15px;
+    margin-bottom: 1.5625em; /* 25px = 1.5625em */
+    padding-left: 0.9375em; /* 15px = 0.9375em */
 }
 
 .row {
     display: flex; /* Elements are aligned in a row by default */
     align-items: center;
-    margin: 8px 0;
+    margin: 0.5em 0;
 }
 
 #comments label {
-    width: 20%; /* Used to space labels from inputs */
+    width: 12.5%; /* Width proportionally adapted */
     text-align: left;
 }
 
-#name {
-    width: 20%; /* Input width */
-    padding: 6px 6px; /* Padding inside the form cells */
-}
-
-#address {
-    width: 20%; /* Input width */
-    padding: 6px 6px; /* Padding inside the form cells */
+#name, #address {
+    width: 12.5%; /* Input width */
+    padding: 0.375em 0.375em; /* Padding inside the form cells */
 }
 
 #comment {
-    width: 40%; /* Input width */
-    padding: 6px 6px;
+    width: 25%; /* Input width */
+    padding: 0.375em 0.375em;
 }
 
 input[type=submit], input[type=reset] {
     width: auto;
     display: inline-block; /* Aligns the reset and submit buttons */
-    margin-top: 10px;
-    margin-right: 10px;
+    margin-top: 0.625em; /* 10px = 0.625em */
+    margin-right: 0.625em; /* 10px = 0.625em */
 }
 
 /* FOOTER */
@@ -214,19 +208,13 @@ footer table {
 }
 
 footer td {
-    border: 0px solid black; /* Removes table borders */
+    border: 0em solid black; /* Removes table borders */
     text-align: center;
 }
 
-#column1 {
-    width: 20%; /* Width as specified in the instructions */
+#column1, #column3 {
+    width: 12.5%; /* 20% width converted to em */
     text-align: left;
-    vertical-align: top;
-}
-
-#column3 {
-    width: 20%; /* Width as specified in the instructions */
-    text-align: right;
     vertical-align: top;
 }
 
@@ -242,3 +230,91 @@ footer a:hover {
 footer a:active {
     color: yellowgreen;
 } /* Link styles */
+
+/* RESPONSIVE DESIGN FOR TABLETS AND SMARTPHONES */
+@media (max-width: 57.5em) { /* 920px = 57.5em */
+    #container {
+        width: 100%; /* Adjust width to fit smaller screens */
+        padding: 0.625em; /* 10px = 0.625em */
+    }
+
+    header h1 {
+        font-size: 2.5em; /* 40px = 2.5em */
+        bottom: 0.9375em; /* 15px = 0.9375em */
+    }
+
+    nav table th {
+        padding: 0.3125em; /* 5px = 0.3125em */
+    }
+
+    #meteo ul, #forecast table {
+        width: 100%; /* Make the lists and tables responsive */
+    }
+
+    #forecast img {
+        width: 4.5em; /* 72px = 4.5em */
+        height: 4.5em;
+    }
+
+    #forecast th, #forecast td {
+        font-size: 0.875em; /* 14px = 0.875em */
+    }
+
+    #name, #address, #comment {
+        width: 100%; /* Make input fields take full width */
+    }
+
+    #comments form {
+        padding-left: 0; /* Remove extra padding for smaller screens */
+    }
+
+    .row {
+        flex-direction: column; /* Stack form elements vertically on smaller screens */
+        align-items: flex-start; /* Align form labels and fields */
+    }
+
+    input[type=submit], input[type=reset] {
+        width: 100%; /* Full-width buttons for better touch interaction */
+        margin-right: 0; /* Remove margin */
+    }
+
+    footer table, footer td {
+        font-size: 0.75em; /* 12px = 0.75em */
+        text-align: center;
+    }
+
+    #column1, #column3 {
+        width: 100%; /* Full width columns in footer */
+        text-align: center;
+        padding: 0.625em 0; /* 10px = 0.625em */
+    }
+
+/* Smartphones (max-width: 30em) { /* 480px = 30em */
+    header h1 {
+        font-size: 1.875em; /* 30px = 1.875em */
+    }
+
+    nav table th {
+        font-size: 0.875em; /* 14px = 0.875em */
+    }
+
+    #forecast img {
+        width: 3em; /* 48px = 3em */
+        height: 3em;
+    }
+
+    #forecast th, #forecast td {
+        font-size: 0.75em; /* 12px = 0.75em */
+    }
+    
+    #name, #address, #comment {
+        width: 100%; /* Full-width input fields */
+    }
+
+    .row {
+        padding: 0.3125em 0; /* 5px = 0.3125em */
+    }
+
+    footer {
+        font-size: 0.625em; /* 10px = 0.625em */
+    }
