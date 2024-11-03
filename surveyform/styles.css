@@ -1,0 +1,94 @@
+/* BODY */
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: #1f1f14;
+  margin: 0 auto;
+}
+
+/* TITLE */
+#title {
+  text-align:center;
+  margin-bottom: 0em;
+}
+
+#description {
+  text-align: center;
+  font-style: italic;
+}
+
+/* FORM */
+#survey-form {
+  width: 75%;
+  margin: 0 auto;
+  background-color: CornflowerBlue;
+  border-radius: 1em;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+#name-label, #email-label, #number-label { 
+  font-weight: bold;
+  margin-bottom: 0.35em;
+}
+
+#name, #email, #number {
+  border-radius: 0.25em;
+  padding: 0.25em;
+  margin-bottom: 1em;
+  color: white;
+  background-color: #1f1f14;
+}
+
+p {
+  font-weight: bold;
+  margin: 0.35em 0 0.35em 0;
+}
+
+#dropdown, #feature {
+  border-radius: 0.25em;
+  padding: 0.25em;
+  color: white;
+  background-color: #1f1f14;
+  margin-bottom: 1em;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row label {
+  text-align: right;
+}
+
+.row [type="radio"], [type="checkbox"] {
+  margin: 0 0.35em 1em 0.35em;
+}
+
+#comment {
+  width: 100%;
+  margin-bottom: 1em;
+  background-color: #1f1f14;
+  color: white;
+}
+
+#submit {
+  margin: 0 auto;
+  width: 100%;
+  height: 10%;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  border: 0;
+  border-radius: 1em;
+}
+
+#submit:hover {
+  background-color: #1f1f14;
+}
