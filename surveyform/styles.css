@@ -92,3 +92,19 @@ p {
 #submit:hover {
   background-color: #1f1f14;
 }
+
+/* MEDIA QUERY for smartphones */
+@media (max-width: 600px) {
+  #survey-form {
+    width: 90%; /* Réduit la largeur du formulaire sur les petits écrans */
+    padding: 1em; /* Ajuste le padding pour les petits écrans */
+  }
+  
+  body {
+    padding: 0.5em; /* Réduit légèrement le padding sur les petits écrans */
+  }
+  
+  #submit {
+    width: 100%; /* Le bouton s'étend sur toute la largeur de l'écran */
+  }
+}
