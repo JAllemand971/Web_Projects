@@ -22,6 +22,7 @@ body {
 /* FORM */
 #survey-form {
   width: 50%;
+  max-width: 40rem;
   margin: 0 auto;
   background-color: CornflowerBlue;
   border-radius: 1em;
@@ -29,8 +30,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-
 
 #name-label, #email-label, #number-label { 
   font-weight: bold;
