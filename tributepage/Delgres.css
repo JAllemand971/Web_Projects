@@ -47,13 +47,13 @@ h2 {
 }
 
 #img-caption {
+  box-sizing: border-box;
   margin: 0 auto;
   padding: 10px;
   width: 60%;
   text-align: center;
-  box-sizing: border-box;
   background: #c6d9ec;
-  font-size:0.75rem;
+  font-size: 0.75rem;
   overflow-wrap: break-word;
 }
 
