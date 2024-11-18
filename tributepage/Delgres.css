@@ -47,14 +47,10 @@ h2 {
 }
 
 #img-caption {
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 10px;
   width: 100%;
   text-align: center;
   background: #c6d9ec;
   font-size: 1rem;
-  overflow-wrap: break-word;
 }
 
 #tribute-info {
