@@ -37,6 +37,9 @@ img {
 }
 
 #img-div {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
   background: #c6d9ec;
   padding: 10px;
   margin: 0;
@@ -44,6 +47,9 @@ img {
 
 #img-caption {
   margin: 0;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
   background: #c6d9ec;
 }
 
