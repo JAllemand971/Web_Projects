@@ -57,6 +57,13 @@ h2 {
   overflow-wrap: break-word;
 }
 
+#tribute-info {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+
 ul {
   padding: 30px;
   width:100%;
