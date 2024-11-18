@@ -39,7 +39,6 @@ h2 {
 }
 
 #image {
-  display: block;
   max-width: 100%;
   height: auto;
   margin: 0 auto;
@@ -47,8 +46,6 @@ h2 {
 }
 
 #img-caption {
-  width: 100%;
-  text-align: center;
   background: #c6d9ec;
   font-size: 1rem;
 }
