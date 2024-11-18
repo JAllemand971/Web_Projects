@@ -54,6 +54,8 @@ img {
 }
 
 ul {
+  padding: 30px;
+  width:100%;
   text-align: left;
   list-style-type: circle;
   max-width: 100%;
