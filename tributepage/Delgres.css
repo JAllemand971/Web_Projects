@@ -51,8 +51,8 @@ h2 {
   padding: 10px;
   text-align: center;
   box-sizing: border-box;
-  background: #c6d9ec;
-  font-size:1.0rem;
+  background: red;
+  font-size:0.5rem;
 }
 
 ul {
