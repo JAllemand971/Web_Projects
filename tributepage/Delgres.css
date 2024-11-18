@@ -53,7 +53,7 @@ h2 {
   text-align: center;
   box-sizing: border-box;
   background: #c6d9ec;
-  font-size:0.5rem;
+  font-size:0.75rem;
   overflow-wrap: break-word;
 }
 
@@ -117,7 +117,7 @@ a:hover {
   }
 
   ul {
-    padding: 0;
+    padding: 5px;
     list-style-type: square;
   }
 }
