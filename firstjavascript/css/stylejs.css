@@ -374,11 +374,14 @@ tfoot {
 	}
 
     fieldset {
-        border: 0;
-        padding: 1rem;
+        border: 0.15rem solid lightblue;
         width: 100%;
 		margin: 0 auto;
     }
+	
+	legend {
+	text-align:center;
+	}
 
     input, textarea {
         width: 90%;
@@ -390,8 +393,6 @@ tfoot {
         width: 90%;
         margin: 1rem auto;
     }
-
-
 
     nav, aside {
         width: 85%;
