@@ -114,7 +114,7 @@ $(document).ready(function(){
                     appetizerPrice = escargotPrice; 
                     total += appetizerPrice; 
                     selection.appetizer = "Snail"; 
-                    $("#image1").html('<img src="images/escargot.jpg" alt="escargot">' + escargotPrice + '$'); 
+                    $("#image1").html('<img src="images/escargot.jpg" alt="Snail">' + escargotPrice + '$'); 
                 }
                 break;
 
@@ -258,7 +258,7 @@ $(document).ready(function(){
                     drinkPrice = coffeePrice;
                     total += drinkPrice;
                     selection.drink = "Coffee/Tea";
-                    $("#image4").html('<img src="images/coffee.jpg" alt="coffee">'+ coffeePrice + '$');
+                    $("#image4").html('<img src="images/cafe.jpg" alt="coffee">'+ coffeePrice + '$');
                 }
                 break;
 
