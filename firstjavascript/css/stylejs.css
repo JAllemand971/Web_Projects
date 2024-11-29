@@ -353,7 +353,7 @@ tfoot {
     }
 
     .partie1, .partie2, .partie3 {
-		flex-direction: column;
+	flex-direction: column;
         margin: 0 auto; 
         padding: 1rem; 
         width: 95%;
@@ -374,7 +374,6 @@ tfoot {
 	}
 
     fieldset {
-        border: 0.15rem solid lightblue;
         width: 100%;
 		margin: 0 auto;
     }
