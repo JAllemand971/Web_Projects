@@ -278,17 +278,16 @@ $(document).ready(function(){
                 }
                 break;
         } // End of switch
-        document.getElementById("resultat3").innerHTML = "Total = " + total + "$"; // Update total
-  }); 
-        
-// Function to calculate the bill with taxes
-$("#facture").click(function(){
-    let totalAvecTaxes = total + total * 0.1495; // Calculate the total with taxes
-    document.getElementById("facture").innerHTML = "Votre facture est de " + totalAvecTaxes.toFixed(2) + "$"; // Display the total with taxes
-    $("#facture").css({ // Apply styling to the button
-        "color": "green",
-        "font-weight": "bold"
-    });
+
+    }); 
+
+    $("#facture").click(function(){
+            let totalAvecTaxes = total + total * 0.1495;
+            document.getElementById("facture").innerHTML = "Your Bill is " + totalAvecTaxes.toFixed(2) + "$";
+            $("#facture").css({
+                "color": "green",
+                "font-weight": "bold"
+            });
+            });
+
 });
-    
-}); 
