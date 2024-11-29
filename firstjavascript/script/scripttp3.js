@@ -1,5 +1,3 @@
-/* Jeremy Allemand, matricule: 20312390, IFT-1144-A-A24, TP3 */
-
 /*
 -------------------------------------------------------
 Title: Function 1 - convert	 
