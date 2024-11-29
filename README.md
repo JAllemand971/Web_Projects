@@ -21,9 +21,12 @@ Repo to show my projects made in HTML5 et CSS3
     <td>Survey Form</td>
     <td><a href="https://jallemand971.github.io/Projects_in_HTML-CSS/surveyform/surveyform.html">https://jallemand971.github.io/Projects_in_HTML-CSS/surveyform/surveyform.html</a></td>    
   </tr>
-    <tr>
+  <tr>
     <td>Tribute Page</td>
     <td><a href="https://jallemand971.github.io/Projects_in_HTML-CSS/tributepage/Delgres.html">https://jallemand971.github.io/Projects_in_HTML-CSS/tributepage/Delgres.html</a></td>    
   </tr>
-
+  <tr>
+    <td>First Javascript Page</td>
+    <td><a href="https://jallemand971.github.io/Projects_in_HTML-CSS/tributepage/Delgres.html">https://jallemand971.github.io/Projects_in_HTML-CSS/tributepage/Delgres.html</a></td>    
+  </tr>
 
