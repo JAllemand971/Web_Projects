@@ -1,139 +1,70 @@
-<!-- Jeremy Allemand, student ID: 20312390, IFT-1144-A-A24, TP3 -->
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="script/scripttp3.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/styletp3.css">         
-    <title>First JavaScript Page</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="widtd=device-width, initial-scale=1">
-    <meta name="description" content="First JavaScript Page">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="Jeremy Allemand">         
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu and Conversion</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-
 <body>
+    <div id="conversion">
+        <h2>Conversion</h2>
+        <input type="text" id="number" placeholder="Enter number">
+        <button id="centimeter" onclick="convert(event)">Convert to cm</button>
+        <button id="inch" onclick="convert(event)">Convert to inches</button>
+        <button id="fahrenheit" onclick="convert(event)">Convert to Fahrenheit</button>
+        <button id="celsius" onclick="convert(event)">Convert to Celsius</button>
+        <p id="result"></p>
+    </div>
 
-    <!--MAIN-->
-    <main>
-        <h1>Practical Work #3</h1>
-        <h2>Identification</h2>
-        <p>This work was done by Jeremy Allemand, student ID: 20312390</p>
+    <div id="display">
+        <h2>Title Display</h2>
+        <input type="text" id="name" placeholder="Enter your name">
+        <input type="number" id="level" placeholder="Enter title level (1-6)">
+        <button id="title" onclick="display(event)">Display Title</button>
+        <p id="result2"></p>
+        <p id="error"></p>
+    </div>
 
-        <!--PART 1-->
-        <section class="partie1">
-            <h2>Part 1</h2>
-            <fieldset class="form1">
-                <legend>Conversion Form</legend>
-                <label for="nombre">Value: </label><input id="nombre" name="nombre" type="text" placeholder="Enter a number"> 
-                <span id="resultat">Result here</span><br>
-                <div class="boutton">
-                    <button id="centimetre" type="button" onclick="convertir(event)">Inches to Cm</button>
-                    <button id="pouce" type="button" onclick="convertir(event)">Cm to Inches</button>
-                    <button id="fahrenheit" type="button" onclick="convertir(event)">Celsius to Fahrenheit</button>
-                    <button id="celsius" type="button" onclick="convertir(event)">Fahrenheit to Celsius</button>
-                </div>
-            </fieldset>
-            <hr>
-        </section>
+    <div id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li class="menu-item">Appetizers
+                <ul class="submenu">
+                    <li>Escargot</li>
+                    <li>Green Salad</li>
+                    <li>Caesar Salad</li>
+                </ul>
+            </li>
+            <li class="menu-item">Main Courses
+                <ul class="submenu">
+                    <li>Spaghetti</li>
+                    <li>Steak</li>
+                    <li>Pizza</li>
+                </ul>
+            </li>
+            <li class="menu-item">Desserts
+                <ul class="submenu">
+                    <li>Ice Cream</li>
+                    <li>Cake</li>
+                    <li>Pudding</li>
+                </ul>
+            </li>
+            <li class="menu-item">Drinks
+                <ul class="submenu">
+                    <li>Coffee</li>
+                    <li>Soft Drink</li>
+                </ul>
+            </li>
+        </ul>
+        <div id="image1"></div>
+        <div id="image2"></div>
+        <div id="image3"></div>
+        <div id="image4"></div>
+        <p>Total: <span id="total">0$</span></p>
+    </div>
 
-        <!--PART 2-->
-        <section class="partie2">
-            <h2>Part 2</h2>
-            <fieldset class="form2">
-                <legend>Display Text on the Web Page (controlled by JavaScript)</legend>
-                <p><label for="nom">Name: </label><input id="nom" name="nom" type="text" placeholder="First Last Name"></p>
-                
-                <p>
-                    <label for="niveau">Level (1 to 6)</label><textarea id="niveau" name="niveau" type="text" placeholder="Title size between 1 and 6"></textarea>
-                    <button id="titre" type="button" onclick="afficher(event)">Display part 2</button>
-                </p>
-                <div id="reponse">
-                    <span id="resultat2">Display here</span>
-                    <span id="erreur"></span>
-                </div>               
-            </fieldset>
-
-            <hr>
-        </section>
-
-        <!--PART 3-->
-        <section class="partie3">
-            <fieldset class="form3">
-                <nav>
-                    <ul id="menu">
-                        <li><span class="menu-item">Menu</span></li>
-                        <li>
-                            <span class="menu-item">Starter</span>
-                            <ul class="submenu" id="entree">
-                                <li>Snail</li>
-                                <li>Green Salad</li>
-                                <li>Caesar Salad</li>
-                            </ul>
-                        </li>    
-                        <li>
-                            <span class="menu-item">Main</span>
-                            <ul class="submenu" id="principal">
-                                <li>Spaghetti</li>
-                                <li>Steak</li>
-                                <li>Pizza</li>
-                            </ul>
-                        </li>
-                        <li><span class="menu-item">Dessert</span>
-                            <ul class="submenu" id="dessert">
-                                <li>Ice Cream</li>
-                                <li>Cake</li>
-                                <li>Pudding</li>
-                            </ul>
-                        </li>
-                        <li><span class="menu-item">Drinks</span>
-                            <ul class="submenu" id="Boisson">
-                                <li>Coffee/Tea</li>
-                                <li>Soda</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-                <aside>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th colspan="4">Your Choice:</th>
-                            </tr>    
-                            <tr>
-                                <th>Starter</th>
-                                <th>Main</th>
-                                <th>Dessert</th>
-                                <th>Drinks</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><span id="image1"></span></td>
-                                <td><span id="image2"></span></td>
-                                <td><span id="image3"></span></td>
-                                <td><span id="image4"></span></td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td></td>
-                                <td colspan="2"><button id="facture" type="button" onclick="facture(event)">Click here to calculate the bill</button>
-                                </td>
-                                <td></td>
-                            </tr>
-                        </tfoot>                    
-                    </table>
-                </aside>
-                
-            </fieldset>    
-        </section>
-
-    </main>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
