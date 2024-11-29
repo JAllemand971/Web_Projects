@@ -344,6 +344,11 @@ tfoot {
         margin: 0 auto;
     }
 
+.partie1, .partie2, .partie3 {
+    border: 0.1rem solid lightblue;
+    border-radius: 1rem;
+}
+	
     fieldset {
 	border: 0;
     }
