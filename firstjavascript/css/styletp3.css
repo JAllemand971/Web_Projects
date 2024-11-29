@@ -53,6 +53,7 @@ hr {
     border: 0.1rem solid lightblue;
     max-width: 90%;
     border-radius: 1rem;
+
 }
 
 label, input, textarea {
@@ -84,8 +85,8 @@ button:nth-child(odd) {
     background-color: #4aabe8;
 }
 
-/* PART 1 */
-.partie1 h2 {
+/* PARTIE 1 */
+.partie1 > h2 {
     margin: 0;
     margin-left: 3rem;
     text-decoration: underline;
@@ -117,7 +118,7 @@ button:nth-child(odd) {
     font-weight: bold;
 }
 
-/* PART 2 */
+/* PARTIE 2 */
 .partie2 > h2 {
     margin: 0;
     margin-left: 3rem;
@@ -221,12 +222,19 @@ button:nth-child(odd) {
     font-weight: bold;
 }
 
-/* PART 3 */
+/* PARTIE 3 */
 .partie3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;   
+}
+
+.partie3 > h2 {
+    margin: 0;
+    margin-left: 3rem;
+    text-decoration: underline;
+    text-align: left;
 }
 
 .form3 {
@@ -239,6 +247,12 @@ button:nth-child(odd) {
     box-sizing: border-box;
 }
 
+.form3 legend {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 1rem;
+}
+
 nav {
     width: 25%;
     background-color:#4dffa6;
@@ -247,6 +261,7 @@ nav {
     border-radius: 0.5rem;
     padding: 1rem;
 }
+
 
 ul li {
     list-style-type: none;
@@ -276,6 +291,7 @@ ul li {
 
 aside {
     width: 70%;
+
 }
 
 aside h3 {
