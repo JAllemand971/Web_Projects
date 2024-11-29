@@ -344,9 +344,13 @@ tfoot {
         margin: 0 auto;
     }
 
-	fieldset {
-		border: 0;
-	}
+    fieldset {
+	border: 0;
+    }
+
+    body {
+    	width: 90%;
+    }
 	
     input, textarea {
         width: 90%;
