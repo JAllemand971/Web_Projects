@@ -27,6 +27,6 @@ Repo to show my projects made in HTML5 et CSS3
   </tr>
   <tr>
     <td>First Javascript Page</td>
-    <td><a href="https://jallemand971.github.io/Projects_in_HTML-CSS/tributepage/Delgres.html">https://jallemand971.github.io/Projects_in_HTML-CSS/tributepage/Delgres.html</a></td>    
+    <td><a href="https://jallemand971.github.io/Projects_in_HTML-CSS/firstjavascript/firstjavascript.html">https://jallemand971.github.io/Projects_in_HTML-CSS/firstjavascript/firstjavascript.html</a></td>    
   </tr>
 
