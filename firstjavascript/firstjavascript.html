@@ -1,79 +1,81 @@
+<!-- Jeremy Allemand, student ID: 20312390, IFT-1144-A-A24, TP3 -->
+
 <!DOCTYPE html>
 <html lang="en">
 
-      <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="script/scripttp3.js"></script>	  
-        <link rel="stylesheet" type="text/css" href="css/styletp3.css">		 
-        <title>First JavaScript Page</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="First JavaScript Page">
-        <meta name="keywords" content="HTML, CSS, JavaScript">
-        <meta name="author" content="Jeremy Allemand">		 
-      </head>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script/scripttp3.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styletp3.css">         
+    <title>First JavaScript Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtd=device-width, initial-scale=1">
+    <meta name="description" content="First JavaScript Page">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Jeremy Allemand">         
+</head>
 
-      <body>
+<body>
 
-        <!--MAIN-->
-        <main>
-            <h1>Practical Work #3</h1>
-            <h2>Identification</h2>
-            <p>This work was done by Jeremy Allemand, student ID: 20312390</p>
+    <!--MAIN-->
+    <main>
+        <h1>Practical Work #3</h1>
+        <h2>Identification</h2>
+        <p>This work was done by Jeremy Allemand, student ID: 20312390</p>
 
-            <!--PART 1-->
-            <section class="part1">
-                <h2>Part 1</h2>
-                <fieldset class="form1">
-                    <legend>Conversion Form</legend>
-                        <label for="nombre">Value: </label><input id="nombre" name="nombre" type="text" placeholder="Enter a number"> 
-                        <span id="resultat">Result here</span><br>
-                        <div class="boutton">
-                            <button id="centimetre" type="button" onclick="convertir(event)">Inches to Cm</button>
-                            <button id="pouce" type="button" onclick="convertir(event)">Cm to Inches</button>
-                            <button id="fahrenheit" type="button" onclick="convertir(event)">Celsius to Fahrenheit</button>
-                            <button id="celsius" type="button" onclick="convertir(event)">Fahrenheit to Celsius</button>
-                        </div>
-                </fieldset>
-                <hr>
-            </section>
+        <!--PART 1-->
+        <section class="partie1">
+            <h2>Part 1</h2>
+            <fieldset class="form1">
+                <legend>Conversion Form</legend>
+                <label for="nombre">Value: </label><input id="nombre" name="nombre" type="text" placeholder="Enter a number"> 
+                <span id="resultat">Result here</span><br>
+                <div class="boutton">
+                    <button id="centimetre" type="button" onclick="convertir(event)">Inches to Cm</button>
+                    <button id="pouce" type="button" onclick="convertir(event)">Cm to Inches</button>
+                    <button id="fahrenheit" type="button" onclick="convertir(event)">Celsius to Fahrenheit</button>
+                    <button id="celsius" type="button" onclick="convertir(event)">Fahrenheit to Celsius</button>
+                </div>
+            </fieldset>
+            <hr>
+        </section>
 
-            <!--PART 2-->
-            <section class="part2">
-                <h2>Part 2</h2>
-                <fieldset class="form2">
-                    <legend>Display text on the Web page (controlled by JavaScript)</legend>
-                        <p><label for="nom">Name: </label><input id="nom" name="nom" type="text" placeholder="First Name Last Name"></p>
-                        
-                        <p>
-                            <label for="niveau">Level (1 to 6)</label><textarea id="niveau" name="niveau" type="text" placeholder="Title size between 1 and 6"></textarea>
-                            <button id="titre" type="button" onclick="afficher(event)">Display Part 2</button>
-                        </p>
-                        <div id="reponse">
-                            <span id="resultat2">Display here</span>
-                            <span id="erreur"></span>
-                        </div>				
-                </fieldset>
+        <!--PART 2-->
+        <section class="partie2">
+            <h2>Part 2</h2>
+            <fieldset class="form2">
+                <legend>Display Text on the Web Page (controlled by JavaScript)</legend>
+                <p><label for="nom">Name: </label><input id="nom" name="nom" type="text" placeholder="First Last Name"></p>
+                
+                <p>
+                    <label for="niveau">Level (1 to 6)</label><textarea id="niveau" name="niveau" type="text" placeholder="Title size between 1 and 6"></textarea>
+                    <button id="titre" type="button" onclick="afficher(event)">Display part 2</button>
+                </p>
+                <div id="reponse">
+                    <span id="resultat2">Display here</span>
+                    <span id="erreur"></span>
+                </div>               
+            </fieldset>
 
-                <hr>
-            </section>
+            <hr>
+        </section>
 
-            <!--PART 3-->
-            <section class="part3">
-                <fieldset class="form3">
-                    <nav>
+        <!--PART 3-->
+        <section class="partie3">
+            <fieldset class="form3">
+                <nav>
                     <ul id="menu">
                         <li><span class="menu-item">Menu</span></li>
                         <li>
                             <span class="menu-item">Starter</span>
                             <ul class="submenu" id="entree">
-                                <li>Escargot</li>
+                                <li>Snail</li>
                                 <li>Green Salad</li>
                                 <li>Caesar Salad</li>
                             </ul>
-                        </li>	
+                        </li>    
                         <li>
-                            <span class="menu-item">Main Course</span>
+                            <span class="menu-item">Main</span>
                             <ul class="submenu" id="principal">
                                 <li>Spaghetti</li>
                                 <li>Steak</li>
@@ -90,7 +92,7 @@
                         <li><span class="menu-item">Drinks</span>
                             <ul class="submenu" id="Boisson">
                                 <li>Coffee/Tea</li>
-                                <li>Soft Drink</li>
+                                <li>Soda</li>
                             </ul>
                         </li>
                     </ul>
@@ -99,11 +101,11 @@
                     <table>
                         <thead>
                             <tr>
-                                <th colspan="4">Your Choice:</h3></th>
-                            </tr>	
+                                <th colspan="4">Your Choice:</th>
+                            </tr>    
                             <tr>
                                 <th>Starter</th>
-                                <th>Main Course</th>
+                                <th>Main</th>
                                 <th>Dessert</th>
                                 <th>Drinks</th>
                             </tr>
@@ -123,15 +125,15 @@
                                 </td>
                                 <td></td>
                             </tr>
-                        </tfoot>					
+                        </tfoot>                    
                     </table>
                 </aside>
                 
-                </fieldset>	
-            </section>
+            </fieldset>    
+        </section>
 
-        </main>
+    </main>
 
-      </body>
+</body>
 
 </html>
