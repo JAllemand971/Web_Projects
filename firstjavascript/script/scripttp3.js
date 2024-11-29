@@ -102,8 +102,8 @@ $(document).ready(function(){
         let choice = $(this).text(); // target only the submenu
 
         switch(choice) {
-            case "Escargot":
-                if (selection.appetizer ==="Escargot"){ 
+            case "Snail":
+                if (selection.appetizer ==="Snail"){ 
                     total -= appetizerPrice; 
                     appetizerPrice = 0; 
                     selection.appetizer = null; 
@@ -113,7 +113,7 @@ $(document).ready(function(){
                     total -= appetizerPrice; 
                     appetizerPrice = escargotPrice; 
                     total += appetizerPrice; 
-                    selection.appetizer = "Escargot"; 
+                    selection.appetizer = "Snail"; 
                     $("#image1").html('<img src="images/escargot.jpg" alt="escargot">' + escargotPrice + '$'); 
                 }
                 break;
