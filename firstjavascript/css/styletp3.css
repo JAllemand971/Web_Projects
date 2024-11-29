@@ -119,7 +119,7 @@ button:nth-child(odd) {
 }
 
 /* PARTIE 2 */
-.partie2 h2 {
+.partie2 > h2 {
     margin: 0;
     margin-left: 3rem;
     text-decoration: underline;
