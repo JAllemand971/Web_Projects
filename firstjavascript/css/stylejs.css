@@ -27,6 +27,7 @@ main {
     background-color: mediumaquamarine;
     margin: 0 auto;
     border-radius: 2rem;
+	width: 60%;
 }
 
 main h1 {
@@ -338,12 +339,17 @@ tfoot {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;  
+        align-items: center;
+		text-align: center;		
         width: 100%;
         height: auto;
         margin: 0 auto;
     }
 
+	fieldset {
+		border: 0;
+	}
+	
     input, textarea {
         width: 90%;
         margin: 0 auto;
@@ -352,11 +358,9 @@ tfoot {
     .form3 {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         width: 100%;
         height: auto;
-        margin: 0;
+        margin: 0 auto;
         text-align: center;
     }
 
