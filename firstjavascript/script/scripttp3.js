@@ -145,7 +145,7 @@ $(document).ready(function () {
                     appetizerPrice = caesarSaladPrice;
                     total += appetizerPrice;
                     selection.appetizer = "Caesar Salad";
-                    $("#image1").html('<img src="images/salade2.jpg" alt="caesar salad">' + caesarSaladPrice + '$');
+                    $("#image1").html('<img src="images/caesar.jpg" alt="caesar salad">' + caesarSaladPrice + '$');
                 }
                 break;
 
@@ -209,7 +209,7 @@ $(document).ready(function () {
                     dessertPrice = iceCreamPrice;
                     total += dessertPrice;
                     selection.dessert = "Ice Cream";
-                    $("#image3").html('<img src="images/cremeglacee.jpg" alt="ice cream">' + iceCreamPrice + '$');
+                    $("#image3").html('<img src="images/icecream.jpg" alt="ice cream">' + iceCreamPrice + '$');
                 }
                 break;
 
@@ -225,7 +225,7 @@ $(document).ready(function () {
                     dessertPrice = cakePrice;
                     total += dessertPrice;
                     selection.dessert = "Cake";
-                    $("#image3").html('<img src="images/gateau.jpg" alt="cake">' + cakePrice + '$');
+                    $("#image3").html('<img src="images/cake.jpg" alt="cake">' + cakePrice + '$');
                 }
                 break;
 
@@ -241,7 +241,7 @@ $(document).ready(function () {
                     dessertPrice = puddingPrice;
                     total += dessertPrice;
                     selection.dessert = "Pudding";
-                    $("#image3").html('<img src="images/pouding.jpg" alt="pudding">' + puddingPrice + '$');
+                    $("#image3").html('<img src="images/pudding.jpg" alt="pudding">' + puddingPrice + '$');
                 }
                 break;
 
