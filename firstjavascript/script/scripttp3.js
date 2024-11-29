@@ -6,7 +6,7 @@ Title: Function 1 - convert
 Purpose: Convert a number to various formats
 -------------------------------------------------------
 */
-function convert(event) {
+function convertir(event) {
     let number = parseFloat(document.getElementById("nombre").value); // declare a float from the input
 
     if (event.target.id === "centimetre"){
@@ -38,7 +38,7 @@ Purpose: Display a title with changing size
 -------------------------------------------------------
 */
 
-function display(event) {
+function afficher(event) {
     let name = document.getElementById("nom").value; // Get the name string
     let level = parseInt(document.getElementById("niveau").value); // Get the number for title size
 
