@@ -416,9 +416,72 @@ tfoot {
     }
 
     table {
-        width: 85%;
-        margin: 1rem auto;
-        table-layout: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+tbody td, thead th {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+    }
+
+    thead {
+        display: none; /* Hide header row */
+    }
+
+    tbody, tfoot {
+        display: block;
+        width: 100%;
+    }
+
+    tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+    }
+
+    tbody td {
+        display: block;
+        text-align: left;
+        padding: 10px;
+    }
+
+    tbody td:before {
+        content: attr(data-header);
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    tbody td:nth-of-type(1):before {
+        content: "Appetizer";
+    }
+
+    tbody td:nth-of-type(2):before {
+        content: "Main Course";
+    }
+
+    tbody td:nth-of-type(3):before {
+        content: "Dessert";
+    }
+
+    tbody td:nth-of-type(4):before {
+        content: "Drinks";
     }
 
     .form3 {
