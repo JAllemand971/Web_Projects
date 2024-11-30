@@ -465,6 +465,12 @@ tfoot {
     tfoot td {
         text-align: center;
     }
+
+    #facture {
+    margin: auto;
+    display: block;
+    width: auto;
+    }
 	
     .form3 {
         display: flex;
