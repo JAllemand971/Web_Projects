@@ -471,6 +471,10 @@ tfoot {
     display: block;
     width: auto;
     }
+
+    td:empty {
+        display: none; /* Masque les cellules vides */
+    }
 	
     .form3 {
         display: flex;
