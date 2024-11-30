@@ -484,6 +484,10 @@ tbody td, thead th {
         content: "Drinks";
     }
 
+    tfoot td {
+        text-align: center;
+    }
+	
     .form3 {
         display: flex;
         flex-direction: column;
