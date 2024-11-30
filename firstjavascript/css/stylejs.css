@@ -416,24 +416,6 @@ tfoot {
     }
 
     table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-thead th {
-    text-align: center;
-    background-color: #f4f4f4;
-}
-
-tbody td, thead th {
-    padding: 10px;
-    border: 1px solid #ddd;
-    text-align: center;
-}
-
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-    table {
         width: 100%;
         border-collapse: separate;
         border-spacing: 0;
