@@ -437,10 +437,11 @@ tbody td, thead th {
         width: 100%;
         border-collapse: separate;
         border-spacing: 0;
+	border: none;
     }
 
     thead {
-        display: none; /* Hide header row */
+        display: none;
     }
 
     tbody, tfoot {
@@ -451,7 +452,6 @@ tbody td, thead th {
     tbody tr {
         display: flex;
         flex-direction: column;
-        border: none;
     }
 
     tbody td {
