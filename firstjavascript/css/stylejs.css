@@ -49,12 +49,13 @@ fieldset {
     border-radius: 1rem;
 }
 
+@media (min-width: 768px) {
 hr {
     margin: 2.25rem auto;
     border: 0.1rem solid lightblue;
     max-width: 90%;
     border-radius: 1rem;
-
+}
 }
 
 label, input, textarea {
