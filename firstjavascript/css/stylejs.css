@@ -347,7 +347,11 @@ tfoot {
         height: auto;
         margin: 0 auto;
     }	
-
+	
+    title {
+	    display:none;
+    }
+	
     main {
         width: 100%;
         margin: 1rem auto;
