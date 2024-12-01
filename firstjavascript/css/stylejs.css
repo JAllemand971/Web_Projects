@@ -326,12 +326,9 @@ tfoot {
     text-align:center;
 }
 
-.facture {
-    width: 100%;
+#facture {
+    width: 50%;
     margin-top: 1rem;
-}
-
-.facture p {
     text-align:center;
 }
 
