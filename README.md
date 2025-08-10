@@ -1,5 +1,5 @@
-<h1>My Projects in HTML/CSS/JavaScript/PHP</h1>
-Repo to show my projects made in HTML5 et CSS3
+<h1>My Web Projects</h1>
+Repo to show my web projects
 
 
 <h2>Description</h2>
