@@ -15,7 +15,7 @@ Repo to show my web projects
   </tr>
   <tr>
     <td>Meteo web site</td>
-    <td><a href="https://jallemand971.github.io/Web_Projects/meteo/meteo.html">https://jallemand971.github.io/Projects_in_HTML-CSS/meteo/meteo.html</a></td>    
+    <td><a href="https://jallemand971.github.io/Web_Projects/meteo/meteo.html">https://jallemand971.github.io/Web_Projects/meteo/meteo.html</a></td>    
   </tr>
   <tr>
     <td>Survey Form</td>
