@@ -11,7 +11,7 @@ Repo to show my web projects
   </tr>
   <tr>
     <td>Resume of Jeremy Allemand</td>
-    <td><a href="https://jallemand971.github.io/Projects_in_HTML-CSS/resume/resume.html">https://jallemand971.github.io/Projects_in_HTML-CSS/resume/resume.html</a></td>
+    <td><a href="https://jallemand971.github.io/Web_Projects/resume/resume.html">https://jallemand971.github.io/Projects_in_HTML-CSS/resume/resume.html</a></td>
   </tr>
   <tr>
     <td>Meteo web site</td>
